@@ -54,6 +54,30 @@ export const embeddings = new OpenAIEmbeddings({
 });
 ```
 
+**注意：**
+
+这里如果调用的模型不支持embeddings的话需要其他方法，使用其他模型供应商的大模型来调用
+我这里用的是硅基流动；
+
+1、去 [siliconflow.cn](https://cloud.siliconflow.cn/i/Wnh0xp4S) 注册，填邀请码 `Wnh0xp4S` 送 ¥14 额度;
+
+2、注册后直接在API秘钥这里新建API秘钥， 然后复制秘钥备用；
+![alt text](image-2.png)
+
+3、拿到 API Key 后，改一下配置就行：
+
+```typescript
+export const embeddings = new OpenAIEmbeddings({
+    model: "BAAI/bge-large-zh-v1.5", 
+    apiKey: process.env.SILICONFLOW_API_KEY,
+    configuration: {
+        baseURL: "https://api.siliconflow.cn/v1",
+    },
+});
+```
+
+可以跟我选一样的模型，或者选择其他嵌入模型都可以，注意在 `.env` 添加相关的apiKey;
+
 > **知识点：Embedding 模型 vs LLM**
 > ```
 > LLM：输入文本 → 输出文本（生成）
