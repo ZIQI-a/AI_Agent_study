@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wechatsync platforms *)",
+      "Bash(wechatsync sync *)",
+      "Bash(pnpm add *)",
+      "Bash(node convert-wechat.mjs \"第01章-环境搭建与工具安装.md\" \"第01章-环境搭建与工具安装-wechat.html\")",
+      "Bash(node -e \"const m = require\\('marked'\\); console.log\\(m.marked.defaults.renderer ? 'has renderer' : 'no default renderer'\\)\")",
+      "Bash(npm ls *)",
+      "Bash(node -e ' *)",
+      "Bash(node convert-wechat.mjs \"第01章-环境搭建与工具安装.md\")"
+    ]
+  }
+}

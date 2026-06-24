@@ -1,4 +1,4 @@
-# 第04章：AI 基础 — 调用你的第一个 LLM API
+# 【零基础AI应用开发】第04章：AI 基础 — 调用你的第一个 LLM API（入门篇）
 
 > 📦 项目教程仓库：https://github.com/ZIQI-a/AI_Agent_study
 > 🚀 成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
