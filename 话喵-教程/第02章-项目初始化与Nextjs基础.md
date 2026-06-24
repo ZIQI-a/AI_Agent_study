@@ -1,5 +1,8 @@
 # 第02章：项目初始化与 Next.js 基础
 
+> 📦 项目教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> 🚀 成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
+
 ## 本章目标
 
 **要做的事**：创建话喵项目，理解项目结构，跑起开发服务器
@@ -347,3 +350,9 @@ export default function Loading() {
 ## 下一章预告
 
 我们将引入 Tailwind CSS 和 shadcn/ui 组件库，搭建话喵的整体 UI 布局 —— 左侧导航栏 + 主内容区，设计猫咪主题的配色方案。
+
+---
+
+> 如果这个教程对你有帮助，欢迎 ⭐ Star 支持一下！
+> - 📦 教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> - 🚀 成品项目：https://github.com/ZIQI-a/huamiao_Agent

@@ -4,6 +4,10 @@
 
 > 本教程手把手带你从零搭建一个完整的 AI 智能创作平台，从环境搭建到部署上线，每一步都能跑通验证。跟着做完，你就能在简历上写"有 AI 应用开发经验"了。
 
+项目教程仓库地址：https://github.com/ZIQI-a/AI_Agent_study
+
+成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
+
 ## 为什么要写这个教程？
 
 最近面试被问"有没有 AI 项目经验"的前端越来越多了。
@@ -19,13 +23,13 @@
 
 本教程为了快速产出实际效果，样式没有过多修饰，大家可以根据自己的需要进行二次开发。
 
-![文章创作](image-3.png)
+![文章创作](images/image-3.png)
 
-![古诗词生成](image-4.png)
+![古诗词生成](images/image-4.png)
 
-![风格文库](image-5.png)
+![风格文库](images/image-5.png)
 
-![历史记录](image-6.png)
+![历史记录](images/image-6.png)
 
 ## 功能清单
 

@@ -1,5 +1,8 @@
 # 第11章：RAG 与风格仿写
 
+> 📦 项目教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> 🚀 成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
+
 ## 本章目标
 
 **要做的事**：用 RAG 技术实现风格仿写 —— 参考导入的文章风格进行创作
@@ -362,3 +365,9 @@ const handleGenerate = async () => {
 ## 下一章预告
 
 核心功能都完成了！下一章我们做体验优化 —— 收藏功能、导出为 Markdown/PDF、多模型切换、暗色模式等。
+
+---
+
+> 如果这个教程对你有帮助，欢迎 ⭐ Star 支持一下！
+> - 📦 教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> - 🚀 成品项目：https://github.com/ZIQI-a/huamiao_Agent

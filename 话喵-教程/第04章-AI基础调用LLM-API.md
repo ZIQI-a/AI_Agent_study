@@ -1,5 +1,8 @@
 # 第04章：AI 基础 — 调用你的第一个 LLM API
 
+> 📦 项目教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> 🚀 成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
+
 ## 本章目标
 
 **要做的事**：安装 AI SDK，编写 API Route 调用 DeepSeek，前端显示 AI 回复
@@ -543,3 +546,9 @@ async function callLLM(messages: any[]) {
 ## 下一章预告
 
 目前的 AI 回复需要等待全部生成完才显示，体验很差。下一章我们将实现流式响应 —— 打字机效果，让 AI 的回复逐字出现在屏幕上。
+
+---
+
+> 如果这个教程对你有帮助，欢迎 ⭐ Star 支持一下！
+> - 📦 教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> - 🚀 成品项目：https://github.com/ZIQI-a/huamiao_Agent

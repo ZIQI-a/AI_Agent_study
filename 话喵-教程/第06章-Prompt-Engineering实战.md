@@ -1,5 +1,8 @@
 # 第06章：Prompt Engineering 实战
 
+> 📦 项目教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> 🚀 成品项目地址：https://github.com/ZIQI-a/huamiao_Agent
+
 ## 本章目标
 
 **要做的事**：学习 Prompt 设计技巧，为话喵设计文章和诗词的核心 Prompt
@@ -371,3 +374,9 @@ const prompt = "你是一个文艺风格的作者，写2000字...";
 ## 下一章预告
 
 有了好的 Prompt，我们开始实现话喵的第一个核心功能 —— 文章创作器。你将构建一个完整的创作表单，用户输入标题、选择参数，AI 流式生成格式化的 Markdown 文章。
+
+---
+
+> 如果这个教程对你有帮助，欢迎 ⭐ Star 支持一下！
+> - 📦 教程仓库：https://github.com/ZIQI-a/AI_Agent_study
+> - 🚀 成品项目：https://github.com/ZIQI-a/huamiao_Agent
