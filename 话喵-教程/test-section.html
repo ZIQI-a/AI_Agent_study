@@ -1,0 +1,40 @@
+<blockquote>📦 项目教程仓库：<a href="https://github.com/ZIQI-a/AI_Agent_study">https://github.com/ZIQI-a/AI_Agent_study</a>
+🚀 成品项目地址：<a href="https://github.com/ZIQI-a/huamiao_Agent">https://github.com/ZIQI-a/huamiao_Agent</a></blockquote><h2>本章目标</h2><p><strong>要做的事</strong>：安装 shadcn/ui，搭建话喵的整体布局（侧边栏 + 主内容区），设计配色方案</p><p><strong>学到的知识</strong>：</p><ul><li>Tailwind CSS 的工作原理（原子化 CSS）</li><li>shadcn/ui 的独特理念（不是 npm 包，是 copy 组件）</li><li>主题系统和自定义配色</li><li>响应式设计</li></ul><h2>3.1 Tailwind CSS 回顾</h2><p>项目创建时已经自动集成了 Tailwind。快速回顾核心用法：</p><section style="background:red;"><code>CODE</code></section><p><strong>核心理念</strong>：一个类名 = 一个 CSS 属性</p><section style="background:red;"><code>CODE</code></section><p>不用写 CSS 文件，不用起类名，不用担心样式冲突。</p><h2>3.2 安装 shadcn/ui</h2><p>shadcn/ui 是目前最流行的 React 组件库之一。它的理念很独特：</p><section style="background:red;"><code>CODE</code></section><h3>初始化 shadcn/ui</h3><section style="background:red;"><code>CODE</code></section><p>会问你几个问题：</p><section style="background:red;"><code>CODE</code></section><p>初始化完成后，你会看到 <code>src/components/ui/</code> 目录被创建了。</p><h3>添加常用组件</h3><section style="background:red;"><code>CODE</code></section><p>每个命令执行后，组件代码会被复制到 <code>src/components/ui/</code> 目录。</p><h2>3.3 自定义主题配色</h2><p>我们为话喵设计一个温暖的猫咪主题配色。</p><p>打开 <code>src/app/globals.css</code>，修改 CSS 变量：</p><section style="background:red;"><code>CODE</code></section><blockquote><strong>知识点：HSL 颜色值</strong>
+shadcn/ui 用 HSL（色相、饱和度、亮度）而不是十六进制来定义颜色。
+<code>25 85% 57%</code> = 色相 25（橙色范围）、饱和度 85%、亮度 57%
+这样调整颜色更直观：改色相换色调，改饱和度调整鲜艳程度。</blockquote><h2>3.4 搭建整体布局</h2><p>我们要做一个经典的左侧导航 + 右侧内容的布局。</p><h3>创建导航组件</h3><p>创建 <code>src/components/layout/sidebar.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><blockquote><strong>知识点：<code>cn()</code> 函数是什么？</strong>
+这是 shadcn/ui 初始化时创建的工具函数（在 <code>src/lib/utils.ts</code> 里）。
+它的作用是合并 Tailwind 类名，避免冲突：
+<code>typescript import { clsx, type ClassValue } from &quot;clsx&quot;; import { twMerge } from &quot;tailwind-merge&quot;;  export function cn(...inputs: ClassValue[]) {   return twMerge(clsx(inputs)); } </code>
+<code>cn(&quot;text-red-500&quot;, &quot;text-blue-500&quot;)</code> → <code>&quot;text-blue-500&quot;</code>（后面的覆盖前面的）</blockquote><h3>创建主布局</h3><p>修改 <code>src/app/layout.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><h2>3.5 更新首页</h2><p>修改 <code>src/app/page.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><h2>3.6 创建页面容器组件</h2><p>每个功能页面都需要类似的布局结构（标题 + 内容区），我们提取一个通用容器。</p><p>创建 <code>src/components/layout/page-container.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><p>更新文章创作页面 <code>src/app/articles/create/page.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><p>更新古诗词页面 <code>src/app/poems/page.tsx</code>：</p><section style="background:red;"><code>CODE</code></section><h2>3.7 响应式设计</h2><p>当前布局在手机上侧边栏会挤占太多空间。我们加上响应式处理。</p><p>修改 <code>src/components/layout/sidebar.tsx</code>，在顶部加上移动端菜单：</p><section style="background:red;"><code>CODE</code></section><p>同时修改 <code>src/app/layout.tsx</code>，给主内容区加上移动端的顶部间距：</p><section style="background:red;"><code>CODE</code></section><h2>本章小结</h2><table>
+<thead>
+<tr>
+<th>概念</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tailwind CSS</td>
+<td>原子化 CSS，一个类名对应一个 CSS 属性</td>
+</tr>
+<tr>
+<td>shadcn/ui</td>
+<td>组件代码复制到你的项目，完全可定制</td>
+</tr>
+<tr>
+<td>CSS 变量主题</td>
+<td>用 HSL 值定义颜色，支持暗色模式</td>
+</tr>
+<tr>
+<td><code>cn()</code> 函数</td>
+<td>合并 Tailwind 类名，避免冲突</td>
+</tr>
+<tr>
+<td>响应式设计</td>
+<td><code>md:</code> 前缀表示在中等屏幕以上生效</td>
+</tr>
+</tbody></table>
+<h2>动手验证</h2><ol><li>启动 <code>pnpm dev</code>，看到话喵的布局（左侧导航 + 右侧内容）</li><li>点击导航栏切换页面，观察高亮状态</li><li>缩小浏览器窗口，侧边栏自动隐藏，出现汉堡菜单</li><li>点击汉堡菜单，侧边栏从左侧滑出</li><li>首页显示三个功能卡片，点击可跳转</li></ol><h2>下一章预告</h2><p>我们将第一次调用 AI API —— 用 DeepSeek 的大模型生成一段文字。你将理解 LLM API 的调用方式、Token 的概念、以及如何处理 API 错误。</p><hr>
+<blockquote>如果这个教程对你有帮助，欢迎 ⭐ Star 支持一下！
+- 📦 教程仓库：<a href="https://github.com/ZIQI-a/AI_Agent_study">https://github.com/ZIQI-a/AI_Agent_study</a>
+- 🚀 成品项目：<a href="https://github.com/ZIQI-a/huamiao_Agent">https://github.com/ZIQI-a/huamiao_Agent</a></blockquote>

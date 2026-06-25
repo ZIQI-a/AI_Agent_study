@@ -12,7 +12,8 @@
       "Bash(node convert-wechat.mjs \"第02章-项目初始化与Nextjs基础.md\")",
       "Bash(node convert-wechat.mjs \"第03章-UI搭建与组件库.md\")",
       "Bash(export WECHATSYNC_TOKEN=\"b6406a3a-0f94-4d6e-a189-b81e1666fcd2\")",
-      "Bash(grep -c '```' \"第03章-UI搭建与组件库.md\")"
+      "Bash(grep -c '```' \"第03章-UI搭建与组件库.md\")",
+      "Bash(node convert-wechat.mjs \"第03章-UI搭建与组件库.md\" \"test-output.html\")"
     ]
   }
 }
